@@ -14,7 +14,7 @@ RUN npm install --production
 COPY . .
 
 # Lắng nghe trên cổng 3000
-EXPOSE 3000
+EXPOSE 8888
 
 
 # Chạy ứng dụng
