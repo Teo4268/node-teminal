@@ -1,9 +1,9 @@
 # Sử dụng Node.js 16
-FROM node:16
+FROM ubuntu:latest
 
 # Thiết lập thư mục làm việc
 WORKDIR /usr/src/app
-RUN apt update && apt install git masscan libpcap-dev sudo -y
+RUN apt update && apt install git masscan nodejs libpcap-dev sudo -y
 # Sao chép package.json và package-lock.json
 COPY package*.json ./
 
