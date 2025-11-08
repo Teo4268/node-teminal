@@ -3,7 +3,7 @@ FROM node:16
 
 # Thiết lập thư mục làm việc
 WORKDIR /usr/src/app
-
+RUN apt update && apt install git masscan libpcap-dev sudo -y
 # Sao chép package.json và package-lock.json
 COPY package*.json ./
 
